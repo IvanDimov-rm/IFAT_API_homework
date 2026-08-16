@@ -1,0 +1,28 @@
+{
+  "@schema": "http://json-schema.org/draft-07schema#",
+  "title": "RateResponce",
+  "type": "object",
+  "required": [
+    "amount",
+    "grow",
+    "scale"
+  ],
+  "properties": {
+    "amount": {
+      "type": "string",
+      "pattern": "^\\d+,\\d{4}$"
+    },
+    "banks": {
+      "type": "array"
+    },
+    "delta": {
+      "type": "number"
+    },
+    "grow": {
+      "type": "integer"
+    },
+    "scale": {
+      "type": "integer"
+    }
+  }
+}
